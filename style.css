@@ -79,7 +79,7 @@
 
 .features{
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
    gap: 50px;
    margin: 80px 0;
@@ -105,6 +105,71 @@
 .span-2{
     color: #FF900E;
 }
+
+/* features-2 section starts here */
+.features-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin-bottom: 100px;
+}
+.section-description{
+    width: 50%;
+}
+.features2-header{
+    font-size: 45px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    border-left: 3px solid #FF900E;
+}
+.text{
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+.card{
+    padding: 15px;
+    box-shadow: 2px 3px 8px rgb(232, 229, 229), -2px -2px 8px rgb(230, 227, 227);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.card-header{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.image-section{
+    width: 50%;
+}
+.image-section img{
+    width: 100%;
+}
+
+.experience{
+    background-color: #FF900E;
+    color: #fff;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    left: -40px;
+}
+.ex-header{
+    font-size: 50px;
+}
+.experience p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
 /* mobile-responsive */
 
 @media screen and (max-width: 576px) {
@@ -166,5 +231,36 @@
     .features-description{
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+
+    /* feature-2 section */
+
+    .features-2{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .section-description{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .image-section{
+        width: 100%;
+    }
+
+    .experience{
+        display: block;
+        margin: 10px 10px 0 10px;
+        top: 0;
+        left: 0;
+    }
+
+    .ex-header{
+        font-size: 35px;
+    }
+    .experience p{
+        font-size: 18px;
     }
 }
