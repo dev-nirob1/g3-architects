@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 40px 0 50px 0;
 }
 
 .nav-header {
@@ -55,6 +55,12 @@ header {
 
 .nav ul li {
     margin-left: 45px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav ul li:hover{
+background-color: #FF900E;
 }
 
 .nav ul li a {
