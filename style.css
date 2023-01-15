@@ -18,7 +18,8 @@
     outline: none;
     border-radius: 8px;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #f88706;
     cursor: pointer;
 }
@@ -26,7 +27,9 @@
 /* header style here */
 
 
-
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -59,93 +62,108 @@
     font-weight: 500;
 }
 
-.description{
+.description {
     width: 860px;
     margin: 0 auto;
     text-align: center;
 }
-.title{
+
+.title {
     font-size: 55px;
     margin-top: 20px;
 }
 
-.info{
+.info {
     padding: 25px 30px;
     font-size: 16px;
     color: #727272;
 }
-
+.banner{
+    display: inline-block;
+}
+.banner img{
+    width: 100%;
+}
 /* features section styles */
 
-.features{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   gap: 50px;
-   margin: 80px 0;
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin: 80px 0;
 }
 
-.photo-gallery{
+.photo-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.features-info h3{
+
+.features-info h3 {
     font-size: 45px;
     margin-bottom: 20px;
 }
-.features-description{
+
+.features-description {
     font-size: 16px;
     color: #727272;
     margin-bottom: 25px;
 }
-.span-1{
-     color: #727272;
+
+.span-1 {
+    color: #727272;
 }
-.span-2{
+
+.span-2 {
     color: #FF900E;
 }
 
 /* features-2 section starts here */
-.features-2{
+.features-2 {
     display: flex;
     justify-content: space-between;
     gap: 70px;
-    margin-bottom: 100px;
 }
-.section-description{
+
+.section-description {
     width: 50%;
 }
-.features2-header{
+
+.features2-header {
     font-size: 45px;
     padding-left: 15px;
     margin-bottom: 25px;
     border-left: 3px solid #FF900E;
 }
-.text{
+
+.text {
     font-size: 16px;
     color: #727272;
     margin-bottom: 20px;
 }
 
-.card{
+.card {
     padding: 15px;
     box-shadow: 2px 3px 8px rgb(232, 229, 229), -2px -2px 8px rgb(230, 227, 227);
     border-radius: 8px;
     margin-bottom: 15px;
 }
-.card-header{
+
+.card-header {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.image-section{
+
+.image-section {
     width: 50%;
 }
-.image-section img{
+
+.image-section img {
     width: 100%;
 }
 
-.experience{
+.experience {
     background-color: #FF900E;
     color: #fff;
     display: inline-block;
@@ -156,16 +174,105 @@
     top: -100px;
     left: -40px;
 }
-.ex-header{
+
+.ex-header {
     font-size: 50px;
 }
-.experience p{
+
+.experience p {
     font-size: 20px;
 }
 
+/* some facts section styles */
+
+.facts {
+    margin-bottom: 100px;
+}
+
+.facts-head {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.facts-description {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 80px;
+    margin-left: 15px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.fact-card {
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.card-item {
+    padding: 40px 35px;
+}
+
+.fact-card:hover {
+    transform: translate(0, -1.5em);
+}
+
+.card-item img {
+    margin-bottom: 10px;
+}
+
+.card-item h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #424242;
+}
+
+.card-item p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
 
 
+/* sponsor section syles  */
+.sponsor{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sponsor-head{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
 
+}
+.sponsor-description{
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+.logo-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+/* footer section styles */
+footer{
+    background-color: #FFF4E7;
+    text-align: center;
+}
+footer p{
+    padding: 40px;
+    font-size: 20px;
+}
 
 
 
@@ -175,30 +282,34 @@
 @media screen and (max-width: 576px) {
 
     /* common styles */
-    .btn-primary{
+    .btn-primary {
         padding: 13px 17px;
         font-size: 16px;
     }
 
     /* header-section-responsive */
-    .nav-header{
+    .nav-header {
         margin-bottom: 20px;
     }
-    .container{
+
+    .container {
         width: 100%;
     }
-    .nav{
+
+    .nav {
         padding: 30px 0;
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
-    ul{
+
+    ul {
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
-    .nav ul li{
+
+    .nav ul li {
         margin: 8px;
         padding: 12px;
         border-radius: 8px;
@@ -208,27 +319,35 @@
     .description {
         width: 100%;
     }
-    .title{
+
+    .title {
         font-size: 40px;
+    }
+    .banner img{
+        width: 100%;
     }
 
     /* features-section-responsive */
 
-    .features{
+    .features {
         flex-direction: column;
         margin: 50px 0;
     }
-    .photo-gallery{
+
+    .photo-gallery {
         grid-template-columns: repeat(1, 1fr);
     }
-    .features-info{
+
+    .features-info {
         text-align: center;
     }
-    .features-info h3{
+
+    .features-info h3 {
         font-size: 35px;
         margin-bottom: 20px;
     }
-    .features-description{
+
+    .features-description {
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -236,31 +355,62 @@
 
     /* feature-2 section */
 
-    .features-2{
+    .features-2 {
         flex-direction: column-reverse;
         text-align: center;
+        margin-bottom: 40px;
     }
 
-    .section-description{
+    .section-description {
         width: 100%;
         padding: 0 10px;
     }
 
-    .image-section{
+    .image-section {
         width: 100%;
     }
 
-    .experience{
+    .experience {
         display: block;
         margin: 10px 10px 0 10px;
         top: 0;
         left: 0;
     }
 
-    .ex-header{
+    .ex-header {
         font-size: 35px;
     }
-    .experience p{
+
+    .experience p {
         font-size: 18px;
     }
+
+
+    /* some-facts section styles */
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .fact-card {
+        margin: 15px;
+    }
+
+    /* sponsor-section responsive */
+
+    .sponsor-head{
+        font-size: 35px;
+    }
+
+    .logo-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 70px;
+    }
+
+    /* footer here */
+    footer p{
+        padding: 25px;
+        font-size: 16px;
+    }
+    
 }
