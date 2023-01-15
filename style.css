@@ -27,9 +27,10 @@
 /* header style here */
 
 
-header{
+header {
     background-color: rgba(255, 144, 14, 0.1);
 }
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -78,12 +79,16 @@ header{
     font-size: 16px;
     color: #727272;
 }
-.banner{
-    display: inline-block;
+
+.banner {
+    padding: 50px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
+    border-radius: 10px;
 }
+
 /* features section styles */
 
 .features {
@@ -120,6 +125,7 @@ header{
 }
 
 /* features-2 section starts here */
+
 .features-2 {
     display: flex;
     justify-content: space-between;
@@ -243,41 +249,49 @@ header{
 
 
 /* sponsor section syles  */
-.sponsor{
+
+.sponsor {
     text-align: center;
     margin-bottom: 100px;
 }
-.sponsor-head{
+
+.sponsor-head {
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 25px;
 
 }
-.sponsor-description{
+
+.sponsor-description {
     font-size: 16px;
     color: #727272;
     margin-bottom: 50px;
 }
-.logo-container{
+
+.logo-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
 }
 
 /* footer section styles */
-footer{
+
+footer {
     background-color: #FFF4E7;
     text-align: center;
 }
-footer p{
+
+footer p {
     padding: 40px;
     font-size: 20px;
 }
 
 
-
-
-/* mobile-responsive */
+/*
+------------
+ mobile-responsive
+ -----------
+  */
 
 @media screen and (max-width: 576px) {
 
@@ -288,6 +302,7 @@ footer p{
     }
 
     /* header-section-responsive */
+
     .nav-header {
         margin-bottom: 20px;
     }
@@ -323,7 +338,8 @@ footer p{
     .title {
         font-size: 40px;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
     }
 
@@ -351,7 +367,6 @@ footer p{
         margin-right: 10px;
         margin-left: 10px;
     }
-
 
     /* feature-2 section */
 
@@ -387,6 +402,12 @@ footer p{
 
 
     /* some-facts section styles */
+
+    .facts {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
     .card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
@@ -398,19 +419,24 @@ footer p{
 
     /* sponsor-section responsive */
 
-    .sponsor-head{
+    .sponsor {
+        margin-bottom: 50px;
+    }
+
+    .sponsor-head {
         font-size: 35px;
     }
 
-    .logo-container{
+    .logo-container {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 70px;
     }
 
     /* footer here */
-    footer p{
+
+    footer p {
         padding: 25px;
         font-size: 16px;
     }
-    
+
 }
